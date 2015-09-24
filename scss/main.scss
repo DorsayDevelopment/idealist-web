@@ -1,1 +1,7 @@
 // Main sass
+.thisIsSass {
+  color: pink;
+  &:hover {
+    color: mediumpurple;
+  }
+}
