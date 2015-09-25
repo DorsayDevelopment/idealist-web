@@ -1,3 +1,7 @@
+.thisIsSass {
+  color: pink; }
+  .thisIsSass:hover {
+    color: pink; }
 
-
-/*# sourceMappingURL=main.css.map */
+body {
+  background: purple; }

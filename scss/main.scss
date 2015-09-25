@@ -2,6 +2,10 @@
 .thisIsSass {
   color: pink;
   &:hover {
-    color: mediumpurple;
+    color: pink;
   }
+}
+
+body {
+  background: purple;
 }
