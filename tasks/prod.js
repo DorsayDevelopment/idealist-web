@@ -9,7 +9,7 @@ gulp.task('styles-prod', ['clean-prod'], function() {
     .pipe(gulp.dest('./scss/'));
 });
 
-gulp.task('js', ['clean-prod'], function() {
+gulp.task('js-prod', ['clean-prod'], function() {
   return gulp.src([
     'shared/**/*.js',
     'pages/**/*.js',
@@ -20,7 +20,7 @@ gulp.task('js', ['clean-prod'], function() {
     .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('html', ['clean-prod'], function() {
+gulp.task('html-prod', ['clean-prod'], function() {
   return gulp.src([
     'shared/**/*.html',
     'pages/**/*.html'
@@ -45,7 +45,7 @@ gulp.task('clean-prod', function() {
 gulp.task('build-prod', [
   'clean-prod',
   'styles-prod',
-  'js',
-  'html',
+  'js-prod',
+  'html-prod',
   'dependencies-prod'
 ]);
