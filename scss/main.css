@@ -1,7 +1,1 @@
-.thisIsSass {
-  color: pink; }
-  .thisIsSass:hover {
-    color: pink; }
-
-body {
-  background: purple; }
+.thisIsSass,.thisIsSass:hover{color:pink}body{background:purple}
