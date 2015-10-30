@@ -2,5 +2,6 @@
 Angular based frontend web component for idealist
 
 ## Proposed domain names
-visionnn.com
-pensando.io ($50)
+ - visionnn.com
+ - pensando.io ($50)
+ - colossalist.com
