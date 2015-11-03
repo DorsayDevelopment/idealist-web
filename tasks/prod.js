@@ -20,6 +20,13 @@ gulp.task('js-prod', ['clean-prod'], function() {
     .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('config-prod', ['clean-prod'], function() {
+  return gulp.src(['./config/config.prod.js'])
+    .pipe(plugins.uglify({mangle: false}))
+    .pipe(plugins.rename('config.js'))
+    .pipe(gulp.dest('dist/config/'));
+});
+
 gulp.task('html-prod', ['clean-prod'], function() {
   return gulp.src([
     'shared/**/*.html',
@@ -29,7 +36,7 @@ gulp.task('html-prod', ['clean-prod'], function() {
 });
 
 gulp.task('assets-prod', ['clean-prod'], function() {
-  return gulp.src('assets')
+  return gulp.src('assets', {base: './'})
     .pipe(gulp.dest('dist/'));
 });
 
@@ -45,7 +52,9 @@ gulp.task('clean-prod', function() {
 gulp.task('build-prod', [
   'clean-prod',
   'styles-prod',
+  'assets-prod',
   'js-prod',
+  'config-prod',
   'html-prod',
   'dependencies-prod'
 ]);
