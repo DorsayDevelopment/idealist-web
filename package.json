@@ -32,7 +32,6 @@
   },
   "dependencies": {
     "express": "^4.13.3",
-    "gulp-nodemon": "^2.0.4",
-    "require-dir": "^0.3.0"
+    "gulp-nodemon": "^2.0.4"
   }
 }
