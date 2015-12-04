@@ -6,7 +6,7 @@ gulp.task('styles-prod', ['clean-prod'], function() {
   return gulp.src('./scss/**/*.scss')
     .pipe(plugins.sass().on('error', plugins.sass.logError))
     .pipe(plugins.minifyCss())
-    .pipe(gulp.dest('./scss/'));
+    .pipe(gulp.dest('./dist/scss/'));
 });
 
 gulp.task('js-prod', ['clean-prod'], function() {
@@ -41,7 +41,7 @@ gulp.task('assets-prod', ['clean-prod'], function() {
 });
 
 gulp.task('dependencies-prod', ['clean-prod'], function() {
-  return gulp.src(['package.json', 'bower.json', '.bowercc'])
+  return gulp.src(['package.json', 'bower.json', '.bowercc', 'index.html'])
     .pipe(gulp.dest('dist/'));
 });
 

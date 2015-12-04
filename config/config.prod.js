@@ -1,3 +1,4 @@
-var config = module.exports = {
+var config = module.exports = {};
 
-};
+config.port = 80;
+config.buildDir = '/';
