@@ -1,0 +1,9 @@
+// Main sass
+body {
+  background: lightgreen;
+}
+
+header-directive, footer-directive, ng-view {
+  float: left;
+  width: 100%;
+}

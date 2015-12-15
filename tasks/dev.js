@@ -4,15 +4,15 @@ var plugins = require('gulp-load-plugins')();
 
 
 gulp.task('styles', function() {
-  return gulp.src('./scss/**/*.scss')
+  return gulp.src('./styles/**/*.scss')
     .pipe(plugins.sass().on('error', plugins.sass.logError))
-    .pipe(gulp.dest('./scss/'))
+    .pipe(gulp.dest('./styles/'))
     .pipe(plugins.livereload());
 });
 
 gulp.task('watch', function() {
   plugins.livereload.listen();
-  gulp.watch('./scss/**/*.scss', ['styles']);
+  gulp.watch('./styles/**/*.scss', ['styles']);
   gulp.watch('./pages/**/*.js', ['lint']);
   gulp.watch('./shared/**/*.js', ['lint']);
 });
