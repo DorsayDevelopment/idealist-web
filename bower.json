@@ -16,9 +16,9 @@
   "dependencies": {
     "angular": "~1.4.0",
     "jquery": "~2.1.4",
-    "bootstrap": "~3.3.4",
     "angular-route": "~1.4.0",
     "angular-animate": "~1.4.0",
-    "modernizr": "~2.8.3"
+    "modernizr": "~2.8.3",
+    "Materialize": "materialize#~0.97.3"
   }
 }
