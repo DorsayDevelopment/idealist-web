@@ -3,16 +3,16 @@ var plugins = require('gulp-load-plugins')();
 var del = require('del');
 
 gulp.task('styles-prod', ['clean-prod'], function() {
-  return gulp.src('./scss/**/*.scss')
+  return gulp.src('./styles/**/*.scss')
     .pipe(plugins.sass().on('error', plugins.sass.logError))
     .pipe(plugins.minifyCss())
-    .pipe(gulp.dest('./dist/scss/'));
+    .pipe(gulp.dest('./dist/styles/'));
 });
 
 gulp.task('js-prod', ['clean-prod'], function() {
   return gulp.src([
-    'shared/**/*.js',
-    'pages/**/*.js',
+    'controllers/**/*.js',
+    'directives/**/*.js',
     '*.js',
     '!gulpfile.js'
   ], {base: './'})
@@ -29,8 +29,7 @@ gulp.task('config-prod', ['clean-prod'], function() {
 
 gulp.task('html-prod', ['clean-prod'], function() {
   return gulp.src([
-    'shared/**/*.html',
-    'pages/**/*.html'
+    'views/**/*.html',
   ], {base: './'})
     .pipe(gulp.dest('dist/'));
 });
