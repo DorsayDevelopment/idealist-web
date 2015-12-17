@@ -16,7 +16,7 @@ gulp.task('js-prod', ['clean-prod'], function() {
     '*.js',
     '!gulpfile.js'
   ], {base: './'})
-    .pipe(plugins.uglify())
+    .pipe(plugins.uglify({mangle: false}))
     .pipe(gulp.dest('dist/'));
 });
 
