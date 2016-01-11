@@ -1,9 +1,25 @@
 // Main sass
+@import 'buttons.scss';
+@import 'typography.scss';
+@import 'signup.scss';
+
 body {
-  background: lightgreen;
+  background: white;
 }
 
+//Navigation
+nav{
+  background-color: white !important;
+}
 header-directive, footer-directive, ng-view {
   float: left;
   width: 100%;
 }
+//Template
+//
+//@media(max-width: 894px){
+//  font-size:2em;
+//}
+//@media(max-width: 541px){
+//  font-size:1.3em;
+//}

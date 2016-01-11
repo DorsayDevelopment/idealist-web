@@ -1,0 +1,15 @@
+<div ng-controller="SignupController" class="ng-scope center">
+    <div class="row signup-header">
+        <h1>Create an account</h1>
+    </div>
+    <div class="row">
+        <div class="signup-form col s12 m6 l4 offset-m3 offset-l4">
+            <form novalidate="" class="simple-form ng-dirty ng-submitted ng-valid ng-valid-email">
+                <p>Name:</p> <input type="text" ng-model="user.name" /><br />
+                <p>E-mail:</p> <input type="email" ng-model="user.email" /><br />
+                <p>Confirm E-mail:</p> <input type="email" ng-model="usero.email" /><br />
+                <a class="btn" type="submit" ng-click="update(user)" value="Save">REGISTER</a>
+            </form>
+        </div>
+    </div>
+</div>

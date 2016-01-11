@@ -1,0 +1,46 @@
+<div ng-controller="SignupController" class="ng-scope center">
+    <div class="row signup-header">
+        <h1>REGISTER TODAY</h1>
+    </div>
+    <div class="row">
+        <div class="signup-form col s12 m6 l4 offset-m3 offset-l4">
+            <form novalidate="" class="simple-form ng-dirty ng-submitted ng-valid ng-valid-email">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="name">Username:</label>
+                        <input type="text" id="name" ng-model="user.name" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required ng-model="user.email" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="email" id="emailconfirm" required ng-model="user.emailconfirm" />
+                        <label for="emailconfirm">Confirm E-mail</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" required ng-model="user.password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input password-match="user.password" required id="confirmpassword" type="password" ng-model="user.confirmpassword" class="validate">
+                        <label for="confirmpassword">Confirm Password</label>
+                    </div>
+                    <div ng-show="passwordCheck"><p>Passwords do not match!</p></div>
+                </div>
+                <a class="btn" type="submit" ng-click="createUser(user)" value="Save">REGISTER</a>
+            </form>
+            <md-button class="mdToast" ng-click="showSimpleToast()">
+                Show Simple
+            </md-button>
+        </div>
+    </div>
+</div>

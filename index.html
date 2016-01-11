@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="styles/main.css"/>
+  <link rel="stylesheet" href="libs/angular-material/angular-material.css"/>
+    <link rel="stylesheet" href="libs/materialize/dist/css/materialize.css"/>
 </head>
 <body ng-app="idealist">
   
@@ -14,18 +16,24 @@
   <footer-directive></footer-directive>
 
   <!--dependencies-->
+  <script src="libs/jquery/dist/jquery.js"></script>
   <script src="libs/angular/angular.js"></script>
+  <script src="libs/materialize/dist/js/materialize.js"></script>
   <script src="libs/angular-route/angular-route.js"></script>
   <script src="libs/angular-animate/angular-animate.js"></script>
-  
+  <script src="libs/angular-material/angular-material.js"></script>
+  <script src="libs/angular-aria/angular-aria.js"></script>
+
   <!--app-->
   <script src="app.js"></script>
   <script src="controllers/header.controller.js"></script>
+  <script src="controllers/signup.controller.js"></script>
   <script src="controllers/footer.controller.js"></script>
   <script src="controllers/home.controller.js"></script>
   <script src="controllers/landing.controller.js"></script>
   
   <script src="directives/header.directive.js"></script>
+  <script src="directives/signup.directive.js"></script>
   <script src="directives/footer.directive.js"></script>
 </body>
 </html>

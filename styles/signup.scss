@@ -1,0 +1,23 @@
+.signup-form{
+  background-color: #64B5F6;
+  border-radius: 10px;
+  p{
+    font-size: 2em;
+  }
+  input{
+    border-color: white !important;
+  }
+}
+.signup-header{
+  h1{
+    @media(max-width: 894px){
+      font-size:2em;
+    }
+    //@media(max-width: 541px){
+    //  font-size:1.3em;
+    //}
+  }
+}
+md-toast .md-toast-content{
+  background-color: #64B5F6 !important;
+}

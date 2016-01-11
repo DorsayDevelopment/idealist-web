@@ -19,7 +19,7 @@
     "angular-route": "~1.4.0",
     "angular-animate": "~1.4.0",
     "modernizr": "~2.8.3",
-    "Materialize": "materialize#~0.97.3",
+    "Materialize": "materialize#0.97.2",
     "angular-material": "~1.0.0"
   }
 }
