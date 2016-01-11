@@ -1,0 +1,14 @@
+.signup-form {
+  background-color: #64B5F6;
+  border-radius: 10px; }
+  .signup-form p {
+    font-size: 2em; }
+  .signup-form input {
+    border-color: white !important; }
+
+@media (max-width: 894px) {
+  .signup-header h1 {
+    font-size: 2em; } }
+
+md-toast .md-toast-content {
+  background-color: #64B5F6 !important; }
