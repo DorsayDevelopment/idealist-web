@@ -21,5 +21,8 @@
     "modernizr": "~2.8.3",
     "Materialize": "materialize#~0.97.3",
     "angular-material": "~1.0.0"
+  },
+  "resolutions": {
+    "angular": "1.5.5"
   }
 }
